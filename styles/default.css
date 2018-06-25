@@ -1,0 +1,154 @@
+body {
+    background-color: #E0F8F7;
+    overflow-x: hidden;
+}
+
+.pokedex {
+    background-color:#ce4142;
+    width: 675px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 95%;
+}
+
+header {
+    font-family: 'Hemi Head';
+    font-size: 30px;
+    text-transform: uppercase;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+/*Polices*/
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url('../polices/CaviarDreams.ttf');
+}
+
+@font-face {
+    font-family: "Hemi Head";
+    src: url('../polices/hemi head bd it.ttf');
+}
+
+
+
+#titre-pokedex {
+
+    padding-left: 100px;
+    padding-bottom: 30px;
+    position: relative;
+    width: 300px;
+    border-bottom: 5px solid #000;
+    left: -20px;
+}
+
+#titre-pokedex>a {
+    color: #000;
+}
+
+#titre-auteur {
+
+    color: #000;
+    border-top: 5px solid #000;
+    text-align: right;
+    width: 300px;
+    position: relative;
+    top: -75px;
+    padding: 10px;
+    padding-right: 30px;
+    right: -355px;
+
+}
+
+#diagonale{
+    position: relative;
+    right: -277px;
+    top: -15px;
+}
+
+#diagonale:after{
+    content:"";
+    position:absolute;
+    border-top: 5px solid #000;
+    width:98px;
+    transform: rotate(-38deg);
+    transform-origin: 0% 0%;
+}
+
+/*
+CONTENU
+*/
+
+.container {
+    overflow-y: auto;
+    width: 70%;
+    height: 85%;
+    padding: 10px;
+    background-color: #778178;
+    border: 5px solid #000;
+}
+
+/*Tableau de pokemons*/
+
+table {
+    width: 100%;
+}
+
+#img {
+    width: 200px;
+}
+
+tr {
+    padding-bottom: 10px;  
+    text-align: center;
+}
+
+td {
+    padding-bottom: 25px;
+}
+.img-pokemon {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border: 5px solid #000;
+    background-color: #fff;
+}
+
+.nom-pokemon, .nom-pokemon-desc {
+    font-family: 'Caviar Dreams';
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.nom-pokemon:hover, .nom-pokemon:focus {
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+}
+
+.description {
+    font-family: 'Caviar Dreams';
+    color: #000;
+    width: 300px;
+    font-size: 20px;
+    line-height: 20px;
+
+}
+
+/*
+*   FIN BARRE DE DEFILEMENT
+*/
+
+/*
+* SELECTION
+*/
+::selection {
+    color: white;
+    background: black;
+}
+/*
+FIN SELECTION
+*/
